@@ -19,7 +19,7 @@ Get these files however you like: clone this repo or click the "Download Zip" bu
 1. Hello Map
 2. (Geo)Coder
 3. Listen for the Click (Events)
-4. Styling On 'Em
+4. Stylin' On 'Em
 5. Drawing
 6. Pretty Colors (Layers)
 7. What's the Weather Like?
@@ -29,7 +29,7 @@ Get these files however you like: clone this repo or click the "Download Zip" bu
 
 ###[Google Maps JavaScript API v3 Reference](https://developers.google.com/maps/documentation/javascript/reference?hl=en)
 
-#####Relevant Reference to Each Exercise
+#####Relevant Reference For Each Exercise (in order of appearance)
 Hello Map
 
 - [LatLng](https://developers.google.com/maps/documentation/javascript/reference?hl=en#LatLng)
@@ -47,8 +47,14 @@ Listen for the Click (Events)
 - [event](https://developers.google.com/maps/documentation/javascript/reference?hl=en#event)
 - (The Events section of) [Map](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Map)
 
-Styling On 'Em
+Stylin' On 'Em
 
+- [MapTypeStyler](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapTypeStyler)
+- [MapTypeStyle](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapTypeStyle)
+- [StyledMapTypeOptions](https://developers.google.com/maps/documentation/javascript/reference?hl=en#StyledMapTypeOptions)
+- [StyledMapType](https://developers.google.com/maps/documentation/javascript/reference?hl=en#StyledMapType)
+- (The Properties section of) [Map](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Map)
+- [MapTypeRegistry](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapTypeRegistry)
 
 Drawing
 
