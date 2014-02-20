@@ -4,12 +4,13 @@
 
 The goal of this workshop is to gently introduce APIs via the Google Maps API. These are the exercise files that accompany the workshop.
 
-###Pre-reqs
+###Pre-reqs (In Order of Importance)
 
 - Object-oriented programming (CS 61A): [quick review](http://www-inst.eecs.berkeley.edu/~cs61a/sp14/disc/discussion06.pdf)
-- Basic knowledge of HTML, CSS, and JavaScript: [quick review](http://learn.shayhowe.com/advanced-html-css/)
+- JavaScript: [quick start](http://www.codecademy.com/courses/javascript-intro/0/1)
 - Know what a [callback](http://www.impressivewebs.com/callback-functions-javascript/) is
-- Google Maps API v3 key: [get one](https://code.google.com/apis/console)
+- Basic knowledge of HTML and CSS: [quick review](http://learn.shayhowe.com/html-css/)
+- [Google Maps API v3 key](https://code.google.com/apis/console)
 
 ###Usage
 
