@@ -21,25 +21,28 @@ Get these files however you like: clone this repo or click the "Download Zip" bu
 
 ###Exercises and Relevant Documentation
 
-1. Hello Map
+1. Hello Map: A simple map centered on our second home.
 	- [LatLng](https://developers.google.com/maps/documentation/javascript/reference?hl=en#LatLng)
 	- [MapOptions](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapOptions)
 	- [Map](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Map)
-2. (Geo)Coder
+2. (Geo)Coder: A tool for discovering the latitude and longitude of addresses.
 	- [Geocoder](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Geocoder)
 	- [GeocoderResult](https://developers.google.com/maps/documentation/javascript/reference?hl=en#GeocoderResult)
 	- [Marker](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Marker)
-3. Listen for the Click (Events)
+3. Listen for the Click (Events): An introduction to event listeners.
 	- [event](https://developers.google.com/maps/documentation/javascript/reference?hl=en#event)
 	- (The Events section of) [Map](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Map)
-4. Stylin' On 'Em
+4. Stylin' On 'Em: Paint the globe blue and gold. You mad?
 	- [MapTypeStyler](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapTypeStyler)
 	- [MapTypeStyle](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapTypeStyle)
 	- [StyledMapTypeOptions](https://developers.google.com/maps/documentation/javascript/reference?hl=en#StyledMapTypeOptions)
 	- [StyledMapType](https://developers.google.com/maps/documentation/javascript/reference?hl=en#StyledMapType)
 	- (The Properties section of) [Map](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Map)
 	- [MapTypeRegistry](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapTypeRegistry)
-5. Drawing
+5. Hello Neighbors: Mark some of our fellow bay area universities.
+	- [MarkerShape](https://developers.google.com/maps/documentation/javascript/reference#MarkerShape)
+	- [Size](https://developers.google.com/maps/documentation/javascript/reference#Size)
+	- [Icon](https://developers.google.com/maps/documentation/javascript/reference#Icon)
 6. Pretty Colors (Layers)
 7. What's the Weather Like?
 8. Directions
