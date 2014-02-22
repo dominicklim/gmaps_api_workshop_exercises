@@ -18,6 +18,8 @@
     <script type="text/javascript" src="js/maps.js"></script>
     <script type="text/javascript">
       var MAX_ZOOM = 20;
+      var map;
+      var marker;
 
       function initialize() {
         // Initialize center, a LatLng object
@@ -35,13 +37,13 @@
         // Initialize map, a Map object
 
         // *** REPLACE null WITH YOUR CODE ***
-        var map = null;
+        map = null;
         assertNonNull(map, "map");
 
         // Initialize marker, a Marker object positioned at the center of the map
 
         // *** REPLACE null WITH YOUR CODE ***
-        var marker = null;
+        marker = null;
         assertNonNull(marker, "marker");
 
         // Add a listener that pans back to the marker when the center changes
