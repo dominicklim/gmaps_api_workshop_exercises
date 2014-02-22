@@ -27,6 +27,7 @@ Get these files however you like: clone this repo or click the "Download Zip" bu
 	- [Map](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Map)
 2. (Geo)Coder: A tool for discovering the latitude and longitude of addresses.
 	- [Geocoder](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Geocoder)
+	- [GeocoderRequest](https://developers.google.com/maps/documentation/javascript/reference#GeocoderRequest)
 	- [GeocoderResult](https://developers.google.com/maps/documentation/javascript/reference?hl=en#GeocoderResult)
 	- [Marker](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Marker)
 3. Listen for the Click (Events): An introduction to event listeners.

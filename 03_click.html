@@ -1,0 +1,75 @@
+<!-- declare app as HTML5 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- viewport controls the experience across browsers  -->
+    <!-- initial-scale:= initial zoom; user-scalable:= can user zoom? -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/maps.css">
+    <!-- load the Google Maps API, replace API_KEY with your key -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}&sensor=false"></script>
+  </head>
+
+  <body>
+    <!-- reserve a spot for the map to display on the page -->
+    <div id="map-canvas"></div>
+
+    <script type="text/javascript" src="js/maps.js"></script>
+    <script type="text/javascript">
+      var MAX_ZOOM = 20;
+
+      function initialize() {
+        // Initialize center, a LatLng object
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var center = null;
+        assertNonNull(center, "center");
+
+        // Initialize mapOptions, a MapOptions object
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var mapOptions = null;
+        assertNonNull(mapOptions, "mapOptions");
+
+        // Initialize map, a Map object
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var map = null;
+        assertNonNull(map, "map");
+
+        // Initialize marker, a Marker object positioned at the center of the map
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var marker = null;
+        assertNonNull(marker, "marker");
+
+        // Add a listener that pans back to the marker when the center changes
+        // marker
+
+        // *** YOUR CODE HERE ***
+
+        // Add a listener that increments zoom when the marker is clicked
+
+        // *** YOUR CODE HERE ***
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+      }
+
+      function panToMarker() {
+        // 3 seconds after the center of the map has changed, pan back to the
+        // marker.
+        window.setTimeout(function() {
+            map.panTo(marker.getPosition());
+        }, 3000);
+      }
+
+      function incrementZoom() {
+          map.setZoom((map.getZoom() + 1) % MAX_ZOOM);
+          map.setCenter(marker.getPosition());
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </body>
+</html>

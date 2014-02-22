@@ -1,0 +1,101 @@
+<!-- declare app as HTML5 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- viewport controls the experience across browsers  -->
+    <!-- initial-scale:= initial zoom; user-scalable:= can user zoom? -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/maps.css">
+    <!-- load the Google Maps API, replace API_KEY with your own key -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}&sensor=true"></script>
+  </head>
+
+  <body>
+    <!-- reserve a spot for the map to display on the page -->
+    <div id="map-canvas"/>
+    <script type="text/javascript" src="js/maps.js"></script>
+    <script type="text/javascript">
+      var SODA_LAT = 37.875;
+      var SODA_LONG = -122.258;
+
+      // The dimensions of each icon image in pixels
+      var ICON_TRUE_WIDTH = 30;
+      var ICON_TRUE_HEIGHT = 48;
+
+      // The dimensions of icons as they should appear on the map
+      var ICON_WIDTH = ICON_TRUE_WIDTH / 1.5;
+      var ICON_HEIGHT = ICON_TRUE_HEIGHT / 1.5;
+
+      function initialize() {
+        var mapOptions = {
+          zoom: 9,
+          center: new google.maps.LatLng(SODA_LAT, SODA_LONG)
+        }
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        setMarkers(map, schools);
+      }
+
+      // Data for the markers
+      var schools = [
+        ['SJSU', 37.336, -121.880, 'sjsu'],
+        ['Stanford', 37.429, -122.172, 'stanford'],
+        ['Cal', 37.872, -122.257, 'cal']
+      ];
+
+      // Add markers to the map
+      // The coordinate system we're working with puts the origin in the top
+      // left, increases in the x direction to the right and in the y
+      // direction down.
+      function setMarkers(map, locations) {
+        // Initialize shape, a MarkerShape object
+        // shape defines the clickable region of each marker
+        // hint: set the shape's type to rect and use ICON_WIDTH and ICON_HEIGHT
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var shape = null;
+        assertNonNull(shape, "shape");
+
+        for (var i = 0; i < locations.length; i++) {
+          var location = locations[i];
+          var position = new google.maps.LatLng(location[1], location[2]);
+          var imageURL = 'img/' + location[3] + '.png';
+          var title = location[0];
+
+          // Initialize size, a Size object
+          // hint: set its dimensions to match the pixel dimensions of the icon
+
+          // *** REPLACE null WITH YOUR CODE ***
+          var trueSize = null;
+          assertNonNull(trueSize, "trueSize");
+
+          // Initialize scaledSize, a Size object
+          // hint: set its dimensions to match the dimensions of the icon as it
+          // should appear on the map
+
+          // *** REPLACE null WITH YOUR CODE ***
+          var scaledSize = null;
+          assertNonNull(scaledSize, "scaledSize");
+
+          // Initialize icon, an Icon object
+          // hint: you can depend on the defaults for anchor and origin
+
+          // *** REPLACE null WITH YOUR CODE ***
+          var icon = null;
+          assertNonNull(icon, "icon");
+
+          // Initialize Marker, a Marker object
+          // set the following properties: position, map, icon, shape, title
+          // pro tip: use zIndex to make sure Cal is always on top!
+
+          // *** REPLACE null WITH YOUR CODE ***
+          var marker = null;
+          assertNonNull(marker, "marker");
+        }
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </body>
+</html>
