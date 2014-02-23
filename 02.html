@@ -1,29 +1,24 @@
-<!-- declare app as HTML5 -->
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- viewport controls the experience across browsers  -->
-    <!-- initial-scale:= initial zoom; user-scalable:= can user zoom? -->
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/maps.css">
-    <!-- load the Google Maps API, replace API_KEY with your key -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   </head>
 
   <body>
-    <!-- reserve a spot for the map to display on the page -->
     <div id="map-canvas"></div>
-    <!-- encode input -->
-    <div class="encode">
-      <input id="address" type="textbox" value="" placeholder="address">
-      <input type="button" value="Encode" onclick="codeAddress()">
-      <input id="latitude" type="textbox" value="" placeholder="latitude">
-      <input id="longitude" type="textbox" value="" placeholder="longitude">
+    <div id="control">
+      <input id="address" type="textbox" value="" placeholder="address"/>
+      <input id="encode-button" type="button" value="Encode"/>
+      <input id="latitude" type="textbox" value="" placeholder="latitude"/>
+      <input id="longitude" type="textbox" value="" placeholder="longitude"/>
     </div>
-
-    <script type="text/javascript" src="js/maps.js"></script>
+    <script type="text/javascript" src="js/assert.js"></script>
     <script type="text/javascript">
+      var MYSTERY_LAT = 48.067;
+      var MYSTERY_LONG = 12.863;
+
       var geocoder;
       var map;
 
@@ -40,10 +35,11 @@
         var center = null;
         assertNonNull(center, "center");
 
-        var mapOptions = {
-          center: center,
-          zoom: 15
-        };
+        // Initialize mapOptions, a MapOptions object
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var mapOptions = null;
+        assertNonNull(mapOptions, "mapOptions");
 
         // Initialize map, a Map object
 
@@ -54,7 +50,7 @@
 
       function codeAddress() {
         var address = document.getElementById("address").value;
-        var location = null;
+        var loc = null;
 
         // Initialize request, a GeocoderRequest object
         // What are the two options for creating a GeocoderRequest?
@@ -66,23 +62,26 @@
         // geocde your request
         geocoder.geocode(request, function(results, status) {
           if (status == google.maps.GeocoderStatus.OK) {
-            // Get location from results, an array of GeocoderResult objects
+            // Get location, a LatLng object, from results, an array of 
+            // GeocoderResult objects, then set location to loc
+            // hint: use the first result
+            // second hint: location is a property of a property
 
             // *** REPLACE null WITH YOUR CODE ***
-            location = null;
-            assertNonNull(location, "location");
+            loc = null;
+            assertNonNull(loc, "loc");
 
-            // Display the latitude and longitude values of location
+            // Display the latitude and longitude values of loc
 
             // *** REPLACE null WITH YOUR CODE ***
             document.getElementById("latitude").value = null;
             document.getElementById("longitude").value = null;
 
-            // Center the map on the location
+            // Center the map on loc
 
             // *** YOUR CODE HERE ***
 
-            // Add a marker at the encoded location
+            // Add a marker at loc
 
             // *** REPLACE null WITH YOUR CODE ***
             var marker = null;
@@ -94,6 +93,8 @@
       }
 
       google.maps.event.addDomListener(window, 'load', initialize);
+
+      document.getElementById("encode-button").onclick = codeAddress;
     </script>
   </body>
 </html>

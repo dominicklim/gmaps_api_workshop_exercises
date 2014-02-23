@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/maps.css">
+    <link rel="stylesheet" type="text/css" href="css/pano.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+    <div id="pano"></div>
+    <script type="text/javascript" src="js/assert.js"></script>
+    <script>
+      function initialize() {
+        var SODA_LAT = 37.8757435;
+        var SODA_LONG = -122.25873230000002;
+
+        var soda = new google.maps.LatLng(SODA_LAT, SODA_LONG);
+
+        var mapOptions = {
+          center: soda,
+          zoom: 15
+        };
+
+        // Initialize map to be centered on Soda Hall with a zoom of 15
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var map = null;
+        assertNonNull(map, "map");
+
+        // Initialize pov, a StreetViewPov object
+        // set the heading to 270 and the pitch to 0
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var pov = null;
+        assertNonNull(pov, "pov");
+
+        // Initialize panoramaOptions, a StreetViewPanoramaOptions object
+        // set the position to Soda Hall and use pov
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var panoramaOptions = null;
+        assertNonNull(panoramaOptions, "panoramaOptions");
+
+        var panoDiv = document.getElementById('pano');
+
+        // Initialize panorama, a StreetViewPanorama object
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var panorama = null;
+        assertNonNull(panorama, "panorama");
+
+        // Set map's street view to panorama
+
+        // *** YOUR CODE HERE ***
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </body>
+</html>

@@ -5,19 +5,18 @@
     <!-- viewport controls the experience across browsers  -->
     <!-- initial-scale:= initial zoom; user-scalable:= can user zoom? -->
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/maps.css">
-    <!-- load the Google Maps API, replace API_KEY with your own key -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}&sensor=true"></script>
+    <!-- load the Google Maps API, replace {YOUR_API_KEY} with your own key -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}&sensor=false"></script>
   </head>
 
   <body>
     <!-- reserve a spot for the map to display on the page -->
     <div id="map-canvas"/>
-    <script type="text/javascript" src="js/maps.js"></script>
+    <script type="text/javascript" src="js/assert.js"></script>
     <script type="text/javascript">
-      var SODA_LAT = 37.875;
-      var SODA_LONG = -122.258;
+      var SODA_LAT = 37.8757435;
+      var SODA_LONG = -122.25873230000002;
 
       function initialize() {
         // Initialize center, a LatLng object

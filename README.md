@@ -19,13 +19,10 @@ Get these files however you like: clone this repo or click the "Download Zip" bu
 
 ###[Google Maps JavaScript API v3 Reference](https://developers.google.com/maps/documentation/javascript/reference?hl=en)
 
-###Things to Remember
-
-- Replace {YOUR_API_KEY} with your API key
 - When using a constructor, follow this pattern (don't forget the google.maps at the beginning):
 
 		var center = new google.maps.LatLng(SODA_LAT, SODA_LONG);
-- If a constructor is not given in the documentation, set the properties using the JavaScript object literal like so:
+- If a constructor is not given in the documentation, set the properties using the JavaScript object literal:
 
 		var mapOptions = {
 		  center: center,
@@ -58,8 +55,16 @@ Get these files however you like: clone this repo or click the "Download Zip" bu
 	- [MarkerShape](https://developers.google.com/maps/documentation/javascript/reference#MarkerShape)
 	- [Size](https://developers.google.com/maps/documentation/javascript/reference#Size)
 	- [Icon](https://developers.google.com/maps/documentation/javascript/reference#Icon)
-6. Pretty Colors (Layers)
-7. What's the Weather Like?
-8. Directions
-9. Take it to the Streets (Street View)
-
+6. What's the Weather Like?: A tool for checking the weather.
+	- [Libraries](https://developers.google.com/maps/documentation/javascript/libraries)
+	- [WeatherLayer](https://developers.google.com/maps/documentation/javascript/reference#WeatherLayer)
+	- [CloudLayer](https://developers.google.com/maps/documentation/javascript/reference#CloudLayer)
+7. Directions: Google Maps Super Lite.
+	- [DirectionsService](https://developers.google.com/maps/documentation/javascript/reference#DirectionsService)
+	- [DirectionsRendererOptions](https://developers.google.com/maps/documentation/javascript/reference#DirectionsRendererOptions)
+	- [DirectionsRenderer](https://developers.google.com/maps/documentation/javascript/reference#DirectionsRenderer)
+	- [DirectionsRequest](https://developers.google.com/maps/documentation/javascript/reference#DirectionsRequest)
+8. Take it to the Streets (Street View): A side-by-side comparison of overhead and street views.
+	- [StreetViewPov](https://developers.google.com/maps/documentation/javascript/reference#StreetViewPov)
+	- [StreetViewPanoramaOptions](https://developers.google.com/maps/documentation/javascript/reference#StreetViewPanoramaOptions)
+	- [StreetViewPanorama](https://developers.google.com/maps/documentation/javascript/reference#StreetViewPanorama)

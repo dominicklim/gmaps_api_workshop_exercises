@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/maps.css">
+    <!-- TODO: Request the Weather Library -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  </head>
+
+  <body>
+    <div id="map-canvas"/>
+    <script type="text/javascript" src="js/assert.js"></script>
+    <script type="text/javascript">
+      var SODA_LAT = 37.8757435;
+      var SODA_LONG = -122.25873230000002;
+
+      function initialize() {
+        var mapOptions = {
+          zoom: 6,
+          center: new google.maps.LatLng(SODA_LAT, SODA_LONG)
+        };
+
+        // Initialize map
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var map = null;
+        assertNonNull(map, "map");
+
+        // Initialize weatherLayer, a WeatherLayer object
+        // use Fahrenheit as the unit for temperature
+        // use miles per hour as the wind speed unit
+        // reminder: don't forget to set weatherLayer's map
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var weatherLayer = null;
+        assertNonNull(weatherLayer, "weatherLayer");
+
+        // Initialize cloudLayer, a CloudLayer object
+        // don't forget to set cloudLayer's map!
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var cloudLayer = null;
+        assertNonNull(cloudLayer, "cloudLayer");
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </body>
+</html>

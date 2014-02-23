@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/maps.css">
+    <link rel="stylesheet" type="text/css" href="css/directions.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  </head>
+  <body>
+    <div id="directions-panel"></div>
+    <div id="map-canvas"></div>
+    <div id="control">
+      <input id="start" type="textbox" value="" placeholder="start"/>
+      <input id="end" type="textbox" value="" placeholder="end"/>
+      <input id="directions-button" type="button" value="Get Directions"/>
+    </div>
+    <script type="text/javascript" src="js/assert.js"></script>
+    <script>
+      var SODA_LAT = 37.8757435;
+      var SODA_LONG = -122.25873230000002;
+
+      var directionsRenderer;
+      var directionsService;
+
+      function initialize() {
+        // Initialize directionsService, a DirectionsService object
+
+        // *** REPLACE null WITH YOUR CODE ***
+        directionsService = null;
+        assertNonNull(directionsService, "directionsService");
+
+        var mapOptions = {
+          zoom: 7,
+          center: new google.maps.LatLng(SODA_LAT, SODA_LONG)
+        };
+
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        var directionsPanel = document.getElementById('directions-panel');
+
+        // Initialize directionsOptions, a DirectionsRendererOptions object
+        // set the following properties: map, panel
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var directionsOptions = null;
+        assertNonNull(directionsOptions, "directionsOptions");
+
+        // Initialize directionsRenderer, a DirectionsRenderer object
+
+        // *** REPLACE null WITH YOUR CODE ***
+        directionsRenderer = null;
+        assertNonNull(directionsRenderer, "directionsRenderer");
+      }
+
+      function calcRoute() {
+        var start = document.getElementById('start').value;
+        var end = document.getElementById('end').value;
+
+        // Initialize request, a DirectionsRequest object
+        // What are the three required properties of a DirectionsRequest?
+
+        // *** REPLACE null WITH YOUR CODE ***
+        var request = null;
+        assertNonNull(request, "request");
+
+        // Issue a directions search request.
+        // In the callback function, set the directions of directionsRenderer
+        // This is probably the most difficult task so far. Ask for help if you
+        // need it.
+        // hint: use directionsService to issue the search request.
+
+        // *** YOUR CODE HERE ***
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+      document.getElementById("directions-button").onclick = calcRoute;
+    </script>
+  </body>
+</html>

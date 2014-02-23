@@ -1,22 +1,16 @@
-html {
+html, body, #map-canvas {
   height: 100%;
+  margin: 0px;
+  padding: 0px
 }
 
-body {
-  height: 100%; margin: 0; padding: 0;
-}
-
-#map-canvas {
-  height: 100%;
-}
-
-.encode {
+#control {
   width: 100%;
   position: absolute;
   top: 0px;
 }
 
-.encode input {
+#control input {
   width: 15%;
   max-width: 200px;
 }

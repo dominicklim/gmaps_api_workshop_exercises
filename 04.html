@@ -1,27 +1,27 @@
-<!-- declare app as HTML5 -->
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- viewport controls the experience across browsers  -->
-    <!-- initial-scale:= initial zoom; user-scalable:= can user zoom? -->
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/maps.css">
-    <!-- load the Google Maps API, replace API_KEY with your key -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   </head>
 
   <body>
-    <!-- reserve a spot for the map to display on the page -->
-    <div id="map-canvas"></div>
-
-    <script type="text/javascript" src="js/maps.js"></script>
+    <div id="map-canvas"/>
+    <script type="text/javascript" src="js/assert.js"></script>
     <script type="text/javascript">
+      var SODA_LAT = 37.8757435;
+      var SODA_LONG = -122.25873230000002;
+
       var CAL_BLUE = "#003A70";
       var CAL_GOLD = "#FDB515";
 
-      var SODA_LAT = 37.875;
-      var SODA_LONG = -122.258;
+      // Come up with a id for your mapType
+      // hint: don't over think it
+
+      // *** REPLACE null WITH YOUR CODE ***
+      var MY_MAPTYPE_ID = null;
+      assertNonNull(MY_MAPTYPE_ID, "MY_MAPTYPE_ID");
 
       var map;
       // Initialize center, a LatLng object
@@ -32,11 +32,14 @@
       assertNonNull(center, "center");
 
       function initialize() {
-        // Initialize mapOptions, a MapOptions object
-
-        // *** REPLACE null WITH YOUR CODE ***
-        var mapOptions = null;
-        assertNonNull(mapOptions, "mapOptions");
+        var mapOptions = {
+          zoom: 12,
+          center: center,
+          mapTypeControlOptions: {
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+          },
+          mapTypeId: MY_MAPTYPE_ID
+        };
 
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
@@ -50,7 +53,7 @@
         // *** REPLACE null WITH YOUR CODE ***
         var allStyler = null;
         assertNonNull(allStyler, "allStyler");
-
+        
         // Initialize labelsStyler, an array of MapTypeStyler objects
         // simplify the visibility
         // go crazy, add as many rules as you want
@@ -58,7 +61,7 @@
         // *** REPLACE null WITH YOUR CODE ***
         var labelsStyler = null;
         assertNonNull(labelsStyler, "labelsStyler");
-
+  
         // Initialize waterStyler, an array of MapTypeStyler objects
         // set hue to CAL_BLUE
         // go crazy, add as many rules as you want
@@ -90,13 +93,6 @@
         // *** REPLACE null WITH YOUR CODE ***
         var customMapType = null;
         assertNonNull(customMapType, "customMapType");
-
-        // Come up with a id for your mapType
-        // hint: don't over think it
-
-        // *** REPLACE null WITH YOUR CODE ***
-        var MY_MAPTYPE_ID = null;
-        assertNonNull(MY_MAPTYPE_ID, "MY_MAPTYPE_ID");
 
         // Set the mapTypes property of map to a new MapTypeRegistry object
         // hint: use MY_MAPTYPE_ID and customMapType
