@@ -19,6 +19,20 @@ Get these files however you like: clone this repo or click the "Download Zip" bu
 
 ###[Google Maps JavaScript API v3 Reference](https://developers.google.com/maps/documentation/javascript/reference?hl=en)
 
+###Things to Remember
+
+- Replace {YOUR_API_KEY} with your API key
+- When using a constructor, follow this pattern (don't forget the google.maps at the beginning):
+
+		var center = new google.maps.LatLng(SODA_LAT, SODA_LONG);
+- If a constructor is not given in the documentation, set the properties using the JavaScript object literal like so:
+
+		var mapOptions = {
+		  center: center,
+		  zoom: 8
+		};
+- If you get stuck, ask for help!
+
 ###Exercises and Relevant Documentation
 
 1. Hello Map: A simple map centered on our second home.
