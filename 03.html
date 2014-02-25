@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="css/maps.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   </head>
 
@@ -11,6 +11,8 @@
     <script type="text/javascript" src="js/assert.js"></script>
     <script type="text/javascript">
       var MAX_ZOOM = 20;
+
+      var map;
       var marker;
 
       function initialize() {
@@ -46,8 +48,6 @@
         // Add a listener that increments zoom when the marker is clicked
 
         // *** YOUR CODE HERE ***
-
-        google.maps.event.addDomListener(window, 'load', initialize);
       }
 
       function panToMarker() {

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="css/maps.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   </head>
 
@@ -29,12 +29,12 @@
 
       // Data for the markers
       var schools = [
-        ['SJSU', 37.3351874, -121.88107150000002, 'sjsu'],
-        ['Stanford', 37.42410599999999, -122.1660756, 'stanford'],
-        ['CCSF', 37.725819, -122.45111459999998, 'ccsf'],
-        ['SFSU', 37.7219699, -122.47940319999998, 'sfsu'],
-        ['USF', 37.7757012, -122.45101970000002, 'usf'],
-        ['Cal', 37.8739132, -122.25056289999998, 'cal']
+        ['SJSU', 37.3351874, -121.88107150000002, 'img/sjsu.png'],
+        ['Stanford', 37.42410599999999, -122.1660756, 'img/stanford.png'],
+        ['CCSF', 37.725819, -122.45111459999998, 'img/ccsf.png'],
+        ['SFSU', 37.7219699, -122.47940319999998, 'img/sfsu.png'],
+        ['USF', 37.7757012, -122.45101970000002, 'img/usf.png'],
+        ['Cal', 37.8739132, -122.25056289999998, 'img/cal.png']
       ];
 
       // Add markers to the map
@@ -53,7 +53,7 @@
         for (var i = 0; i < locations.length; i++) {
           var loc = locations[i];
           var position = new google.maps.LatLng(loc[1], loc[2]);
-          var imageURL = 'img/' + loc[3] + '.png';
+          var imageURL = loc[3];
           var title = loc[0];
 
           // Initialize size, a Size object

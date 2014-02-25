@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="css/maps.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/pano.css">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   </head>
@@ -11,10 +11,10 @@
     <div id="pano"></div>
     <script type="text/javascript" src="js/assert.js"></script>
     <script>
-      function initialize() {
-        var SODA_LAT = 37.8757435;
-        var SODA_LONG = -122.25873230000002;
+      var SODA_LAT = 37.8757435;
+      var SODA_LONG = -122.25873230000002;
 
+      function initialize() {
         var soda = new google.maps.LatLng(SODA_LAT, SODA_LONG);
 
         var mapOptions = {

@@ -32,39 +32,39 @@ Get these files however you like: clone this repo or click the "Download Zip" bu
 
 ###Exercises and Relevant Documentation
 
-1. Hello Map: A simple map centered on our second home.
+1. Hello Map: A simple map centered on our second home. ([JSFiddle](http://jsfiddle.net/molasseskid/T9LXZ))
 	- [LatLng](https://developers.google.com/maps/documentation/javascript/reference?hl=en#LatLng)
 	- [MapOptions](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapOptions)
 	- [Map](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Map)
-2. (Geo)Coder: A tool for discovering the latitude and longitude of addresses.
+2. (Geo)Coder: A tool for discovering the latitude and longitude of addresses. ([JSFiddle](http://jsfiddle.net/molasseskid/MaFwz))
 	- [Geocoder](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Geocoder)
 	- [GeocoderRequest](https://developers.google.com/maps/documentation/javascript/reference#GeocoderRequest)
 	- [GeocoderResult](https://developers.google.com/maps/documentation/javascript/reference?hl=en#GeocoderResult)
 	- [Marker](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Marker)
-3. Listen for the Click (Events): An introduction to event listeners.
+3. Listen for the Click (Events): An introduction to event listeners. ([JSFiddle](http://jsfiddle.net/molasseskid/zkLt9))
 	- [event](https://developers.google.com/maps/documentation/javascript/reference?hl=en#event)
 	- (The Events section of) [Map](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Map)
-4. Stylin' On 'Em: Paint the globe blue and gold. You mad?
+4. Stylin' On 'Em: Paint the globe blue and gold. You mad? ([JSFiddle](http://jsfiddle.net/molasseskid/N5tCx))
 	- [MapTypeStyler](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapTypeStyler)
 	- [MapTypeStyle](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapTypeStyle)
 	- [StyledMapTypeOptions](https://developers.google.com/maps/documentation/javascript/reference?hl=en#StyledMapTypeOptions)
 	- [StyledMapType](https://developers.google.com/maps/documentation/javascript/reference?hl=en#StyledMapType)
 	- (The Properties section of) [Map](https://developers.google.com/maps/documentation/javascript/reference?hl=en#Map)
 	- [MapTypeRegistry](https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapTypeRegistry)
-5. Hello Neighbors: Mark some of our fellow bay area universities.
+5. Hello Neighbors: Mark some of our fellow bay area universities. ([JSFiddle](http://jsfiddle.net/molasseskid/8pKtS))
 	- [MarkerShape](https://developers.google.com/maps/documentation/javascript/reference#MarkerShape)
 	- [Size](https://developers.google.com/maps/documentation/javascript/reference#Size)
 	- [Icon](https://developers.google.com/maps/documentation/javascript/reference#Icon)
-6. What's the Weather Like?: A tool for checking the weather.
+6. What's the Weather Like?: A tool for checking the weather. ([JSFiddle](http://jsfiddle.net/molasseskid/U5N7x))
 	- [Libraries](https://developers.google.com/maps/documentation/javascript/libraries)
 	- [WeatherLayer](https://developers.google.com/maps/documentation/javascript/reference#WeatherLayer)
 	- [CloudLayer](https://developers.google.com/maps/documentation/javascript/reference#CloudLayer)
-7. Directions: Google Maps Super Lite.
+7. Directions: Google Maps Super Lite. ([JSFiddle](http://jsfiddle.net/molasseskid/gjZQ2))
 	- [DirectionsService](https://developers.google.com/maps/documentation/javascript/reference#DirectionsService)
 	- [DirectionsRendererOptions](https://developers.google.com/maps/documentation/javascript/reference#DirectionsRendererOptions)
 	- [DirectionsRenderer](https://developers.google.com/maps/documentation/javascript/reference#DirectionsRenderer)
 	- [DirectionsRequest](https://developers.google.com/maps/documentation/javascript/reference#DirectionsRequest)
-8. Take it to the Streets (Street View): A side-by-side comparison of overhead and street views.
+8. Take it to the Streets (Street View): A side-by-side comparison of overhead and street views. ([JSFiddle](http://jsfiddle.net/molasseskid/5VASg))
 	- [StreetViewPov](https://developers.google.com/maps/documentation/javascript/reference#StreetViewPov)
 	- [StreetViewPanoramaOptions](https://developers.google.com/maps/documentation/javascript/reference#StreetViewPanoramaOptions)
 	- [StreetViewPanorama](https://developers.google.com/maps/documentation/javascript/reference#StreetViewPanorama)
